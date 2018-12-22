@@ -1,0 +1,158 @@
+body header {
+  height: 100vh;
+  background-color: white; }
+  body header hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 20vw;
+    color: #ffffff9c; }
+  body header .front {
+    font-size: 2rem;
+    letter-spacing: 5px; }
+  body header .techno {
+    margin-top: 4em; }
+    body header .techno a {
+      text-decoration: none;
+      color: #202529;
+      margin: 0px 20px; }
+      body header .techno a:hover {
+        color: #dc3545e0;
+        transform: scale(1.2);
+        transition: .4s; }
+  body header .hamburger {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 1; }
+  body header .suivez {
+    position: absolute;
+    top: 3%;
+    right: 3%; }
+  body header .cv {
+    position: absolute;
+    top: 80%; }
+  body header .hamburger div {
+    width: 35px;
+    height: 4px;
+    background-color: #004c6bd6;
+    border-radius: 5px;
+    margin: 5px 0px; }
+    body header .hamburger div:hover {
+      background-color: #dc3545e0;
+      transform: scale(1.2);
+      transition: .4s; }
+  body header .menu {
+    transition: 3s; }
+    body header .menu .showmenu {
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: -120vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      overflow-x: hidden;
+      transition: 1.5s;
+      background-color: #000000b5;
+      background-size: cover;
+      background-position: center; }
+    body header .menu .nav {
+      list-style-type: none; }
+    body header .menu .nav-item {
+      margin: 10px;
+      text-align: center; }
+    body header .menu .nav-link {
+      font-size: 60px;
+      letter-spacing: 5px;
+      padding: 10px;
+      display: block;
+      color: white;
+      font-family: "Dosis", sans-serif;
+      text-decoration: none;
+      transition: 0.3s; }
+    body header .menu .nav-link:hover,
+    body header .menu .closeBtn:hover {
+      opacity: 0.7;
+      transform: scale(1.2); }
+    body header .menu .closeBtn {
+      position: absolute;
+      top: 0;
+      right: 45px;
+      font-size: 3rem;
+      color: white;
+      text-decoration: none;
+      font-family: "Dosis", sans-serif;
+      transition: 0.3s; }
+  body header .picture-left-up {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height: 50vh;
+    width: 50%; }
+    body header .picture-left-up h1 {
+      font-size: 2rem;
+      letter-spacing: 10px;
+      font-family: 'Major Mono Display', monospace; }
+  body header .picture-left-down {
+    background-color: #202529;
+    background: url(img/picture-left.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50vh;
+    left: 0vw;
+    height: 50vh;
+    width: 50%;
+    box-shadow: 10px 0px 19px #00000033;
+    border: solid #dadada 2px; }
+  body header .picture-right-top {
+    background-color: #202529;
+    background: url(img/picture-right.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    height: 50vh;
+    width: 50%;
+    box-shadow: -5px 10px 30px #00000033; }
+  body header .picture-right-down {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50vh;
+    right: 0vw;
+    height: 50vh;
+    width: 50%; }
+    body header .picture-right-down h2 {
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      font-family: 'Major Mono Display', monospace; }
+body .section-transition {
+  background-color: #ededed; }
+  body .section-transition h1 {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    font-size: 5rem;
+    font-family: 'Dosis', sans-serif;
+    color: #004c6bd6; }
+  body .section-transition h2 {
+    padding-bottom: 15vh;
+    max-width: 50vw;
+    font-size: 1.5rem;
+    color: #000000b5; }
+
+/*# sourceMappingURL=style.css.map */
