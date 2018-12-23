@@ -71,17 +71,17 @@ monhamberger.addEventListener("click", function(showmenu){
        // document.querySelector(".hamburger").style.display = "none";
  })
  close.addEventListener("click", function(hidemenu){
-        document.querySelector(".showmenu").style.top = "-120vh";
+        document.querySelector(".showmenu").style.top = "-150vh";
  })
  closemenuaccueil.addEventListener("click", function(hidemenu){
-     document.querySelector(".showmenu").style.top = "-120vh";
+     document.querySelector(".showmenu").style.top = "-150vh";
  })
  closemenuprojets.addEventListener("click", function(hidemenu){
-    document.querySelector(".showmenu").style.top = "-120vh";
+    document.querySelector(".showmenu").style.top = "-150vh";
 })
  closemenuapropos.addEventListener("click", function(hidemenu){
-     document.querySelector(".showmenu").style.top = "-120vh";
+     document.querySelector(".showmenu").style.top = "-150vh";
  })
  closemenucontact.addEventListener("click", function(hidemenu){
-     document.querySelector(".showmenu").style.top = "-120vh";
+     document.querySelector(".showmenu").style.top = "-150vh";
  })
