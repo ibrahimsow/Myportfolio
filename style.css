@@ -328,52 +328,50 @@ body {
           right: 0vw;
           height: 10vh;
           width: 100%; } }
-  body .section-transition {
-    background-color: #ededed; }
-    body .section-transition h1 {
-      padding-top: 15vh;
-      padding-bottom: 10vh;
-      max-width: 80vw;
-      font-size: 5rem;
-      font-family: 'Dosis', sans-serif;
-      color: #004c6bd6;
-      margin: 0; }
-      @media (max-width: 575px) {
-        body .section-transition h1 {
-          max-width: 90vw;
-          font-size: 2.2rem; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body .section-transition h1 {
-          max-width: 90vw;
-          font-size: 2.2rem; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body .section-transition h1 {
-          max-width: 90vw;
-          font-size: 4rem; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body .section-transition h1 {
-          max-width: 90vw;
-          font-size: 4rem; } }
-    body .section-transition h2 {
-      padding-bottom: 15vh;
-      max-width: 50vw;
-      font-size: 1.5rem;
-      color: #000000b5; }
-      @media (max-width: 575px) {
-        body .section-transition h2 {
-          font-size: 1.2rem;
-          max-width: 80vw; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body .section-transition h2 {
-          font-size: 1.2rem;
-          max-width: 80vw; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body .section-transition h2 {
-          font-size: 2.2rem;
-          max-width: 80vw; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body .section-transition h2 {
-          font-size: 2.2rem;
-          max-width: 80vw; } }
+  body .section-transition h1 {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    font-size: 5rem;
+    font-family: 'Dosis', sans-serif;
+    color: #00B286;
+    margin: 0; }
+    @media (max-width: 575px) {
+      body .section-transition h1 {
+        max-width: 90vw;
+        font-size: 2.2rem; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body .section-transition h1 {
+        max-width: 90vw;
+        font-size: 2.2rem; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .section-transition h1 {
+        max-width: 90vw;
+        font-size: 4rem; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body .section-transition h1 {
+        max-width: 90vw;
+        font-size: 4rem; } }
+  body .section-transition h2 {
+    padding-bottom: 15vh;
+    max-width: 50vw;
+    font-size: 1.5rem;
+    color: #000000b5; }
+    @media (max-width: 575px) {
+      body .section-transition h2 {
+        font-size: 1.2rem;
+        max-width: 80vw; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body .section-transition h2 {
+        font-size: 1.2rem;
+        max-width: 80vw; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .section-transition h2 {
+        font-size: 2.2rem;
+        max-width: 80vw; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body .section-transition h2 {
+        font-size: 2.2rem;
+        max-width: 80vw; } }
 
 /*# sourceMappingURL=style.css.map */
