@@ -28,17 +28,37 @@ body{
         }
         .fa-github-square{
             position: absolute;
-            top: 10vh;
-            right: 0vw;
-            margin-right: 5vw;
+            top: 80vh;
+            left: 0vw;
+            padding: 15px;
+            margin-left: 5vw;
             font-size: 5rem;
             transition: .6s;
+            z-index: 2;
             &:hover{
                 transform: scale(1.2);
             }
         }
-        .hamburger {
+        .fa-desktop{
             position: absolute;
+            top: 3%;
+            right: 3%;
+            font-size: 2rem;
+        }
+        .fa-tablet-alt{
+            position: absolute;
+            top: 4%;
+            right: 6%;
+            font-size: 1.5rem;
+        }
+        .fa-mobile-alt{
+            position: absolute;
+            top: 5%;
+            right: 8%;
+            font-size: 1rem;
+        }
+        .hamburger {
+            position: fixed;
             top: 3%;
             left: 3%;
             z-index: 1;
@@ -367,7 +387,7 @@ body{
         // display: none !important;
         // background-color: #ededed;
         h1{
-            padding-top: 15vh;
+            padding-top: 35vh;
             padding-bottom: 10vh;
             max-width: 80vw;
             font-size: 5rem;
@@ -391,7 +411,7 @@ body{
                 font-size: 4rem;
             }
         }
-        h2{
+        h2{ 
             padding-bottom: 15vh;
             max-width: 50vw;
             font-size: 1.5rem;
@@ -414,5 +434,47 @@ body{
                 }
         }
         
+    }
+    .section-code{
+        height: 70vh;
+        background: url(img/code.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .section-projets{
+        position: relative;
+        height: 100vh;
+        .projet1{
+            background-color: black;
+            position: absolute;
+            top: 20vh;
+            left: 5vw;
+            height: 50vh;
+            width: 40vw;
+        }
+        .projet2{
+            background-color: black;
+            position: absolute;
+            top: 100vh;
+            right: 5vw;
+            height: 50vh;
+            width: 40vw;
+        }
+        .projet3{
+            background-color: black;
+            position: absolute;
+            top: 200vh;
+            left: 5vw;
+            height: 50vh;
+            width: 40vw;
+        }
+        .projet4{
+            background-color: black;
+            position: absolute;
+            top: 300vh;
+            right: 5vw;
+            height: 50vh;
+            width: 40vw;
+        }
     }
 } 

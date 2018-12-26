@@ -26,15 +26,32 @@ body {
       color: #ffffff9c; }
     body header .fa-github-square {
       position: absolute;
-      top: 10vh;
-      right: 0vw;
-      margin-right: 5vw;
+      top: 80vh;
+      left: 0vw;
+      padding: 15px;
+      margin-left: 5vw;
       font-size: 5rem;
-      transition: .6s; }
+      transition: .6s;
+      z-index: 2; }
       body header .fa-github-square:hover {
         transform: scale(1.2); }
-    body header .hamburger {
+    body header .fa-desktop {
       position: absolute;
+      top: 3%;
+      right: 3%;
+      font-size: 2rem; }
+    body header .fa-tablet-alt {
+      position: absolute;
+      top: 4%;
+      right: 6%;
+      font-size: 1.5rem; }
+    body header .fa-mobile-alt {
+      position: absolute;
+      top: 5%;
+      right: 8%;
+      font-size: 1rem; }
+    body header .hamburger {
+      position: fixed;
       top: 3%;
       left: 3%;
       z-index: 1; }
@@ -329,7 +346,7 @@ body {
           height: 10vh;
           width: 100%; } }
   body .section-transition h1 {
-    padding-top: 15vh;
+    padding-top: 35vh;
     padding-bottom: 10vh;
     max-width: 80vw;
     font-size: 5rem;
@@ -373,5 +390,41 @@ body {
       body .section-transition h2 {
         font-size: 2.2rem;
         max-width: 80vw; } }
+  body .section-code {
+    height: 70vh;
+    background: url(img/code.jpeg);
+    background-size: cover;
+    background-position: center; }
+  body .section-projets {
+    position: relative;
+    height: 100vh; }
+    body .section-projets .projet1 {
+      background-color: black;
+      position: absolute;
+      top: 20vh;
+      left: 5vw;
+      height: 50vh;
+      width: 40vw; }
+    body .section-projets .projet2 {
+      background-color: black;
+      position: absolute;
+      top: 100vh;
+      right: 5vw;
+      height: 50vh;
+      width: 40vw; }
+    body .section-projets .projet3 {
+      background-color: black;
+      position: absolute;
+      top: 200vh;
+      left: 5vw;
+      height: 50vh;
+      width: 40vw; }
+    body .section-projets .projet4 {
+      background-color: black;
+      position: absolute;
+      top: 300vh;
+      right: 5vw;
+      height: 50vh;
+      width: 40vw; }
 
 /*# sourceMappingURL=style.css.map */
