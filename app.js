@@ -85,3 +85,7 @@ monhamberger.addEventListener("click", function(showmenu){
  closemenucontact.addEventListener("click", function(hidemenu){
      document.querySelector(".showmenu").style.top = "-150vh";
  })
+
+ // scroll function
+
+ AOS.init();

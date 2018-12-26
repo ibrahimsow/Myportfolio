@@ -27,7 +27,7 @@ body {
     body header .fa-github-square {
       position: absolute;
       top: 80vh;
-      left: 0vw;
+      left: 2vw;
       padding: 15px;
       margin-left: 5vw;
       font-size: 5rem;
@@ -178,7 +178,7 @@ body {
     body header .div-left-up {
       position: absolute;
       top: 0vh;
-      left: 0vw;
+      left: 2vw;
       height: 100vh;
       width: 40vw;
       padding: 15px;
@@ -296,7 +296,7 @@ body {
       box-shadow: -5px 10px 30px #00000033;
       position: absolute;
       top: 40vh;
-      right: 0vw;
+      right: 2vw;
       height: 70vh;
       width: 45vw;
       margin-right: 5vw; }
@@ -399,31 +399,67 @@ body {
     position: relative;
     height: 100vh; }
     body .section-projets .projet1 {
-      background-color: black;
+      background: url(img/movie.png);
+      background-size: cover;
+      background-position: center;
+      box-shadow: -5px 10px 30px #00000075;
       position: absolute;
       top: 20vh;
-      left: 5vw;
+      left: 7vw;
       height: 50vh;
       width: 40vw; }
+    body .section-projets .description1 {
+      position: absolute;
+      top: 20vh;
+      right: 7vw;
+      height: 50vh;
+      width: 40vw;
+      color: #585858;
+      font-size: 1.3rem; }
+      body .section-projets .description1 h3 {
+        color: #741406;
+        font-size: 3rem;
+        margin-bottom: 30px; }
+      body .section-projets .description1 .text-description {
+        font-size: 1rem;
+        padding-top: 20px; }
     body .section-projets .projet2 {
-      background-color: black;
+      background: url(img/vpvj.png);
+      background-size: cover;
+      background-position: center;
+      box-shadow: -5px 10px 30px #00000075;
       position: absolute;
       top: 100vh;
-      right: 5vw;
+      right: 7vw;
       height: 50vh;
       width: 40vw; }
+    body .section-projets .description2 {
+      position: absolute;
+      top: 100vh;
+      left: 7vw;
+      height: 50vh;
+      width: 40vw;
+      color: #585858;
+      font-size: 1.3rem; }
+      body .section-projets .description2 h3 {
+        color: #3e68a2;
+        font-size: 3rem;
+        margin-bottom: 30px; }
+      body .section-projets .description2 .text-description {
+        font-size: 1rem;
+        padding-top: 20px; }
     body .section-projets .projet3 {
       background-color: black;
       position: absolute;
       top: 200vh;
-      left: 5vw;
+      left: 7vw;
       height: 50vh;
       width: 40vw; }
     body .section-projets .projet4 {
       background-color: black;
       position: absolute;
       top: 300vh;
-      right: 5vw;
+      right: 7vw;
       height: 50vh;
       width: 40vw; }
 
