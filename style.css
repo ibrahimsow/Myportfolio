@@ -224,6 +224,16 @@ body {
           top: 5vh;
           height: 30vh;
           width: 100%; } }
+    body header .bg-up {
+      background: url(img/contact.jpeg);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0vh;
+      left: 0vw;
+      height: 50vh;
+      width: 100%;
+      z-index: -1; }
     body header .bg-left-down {
       background-color: #FF5722;
       position: absolute;
@@ -252,35 +262,51 @@ body {
           top: 100vh;
           height: 30vh;
           width: 100%; } }
-    body header .picture-right-top {
+    body header .phone {
       background-color: #202529;
       background: url(img/picture-right.jpeg);
       background-size: cover;
       background-position: center;
       position: absolute;
-      top: 0vh;
-      right: 0vw;
+      top: 50vh;
+      right: 5vw;
       height: 50vh;
-      width: 50%;
-      box-shadow: -5px 10px 30px #00000033;
-      display: none; }
+      width: 40vw;
+      padding: 15px;
+      margin-left: 5vw; }
+    body header .contact-title {
+      position: absolute;
+      top: 50vh;
+      left: 2vw;
+      height: 50vh;
+      width: 40vw;
+      padding: 15px;
+      margin-left: 5vw; }
+      body header .contact-title h1 {
+        font-size: 5rem;
+        letter-spacing: 7px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #101010;
+        line-height: 7rem;
+        color: white; }
       @media (max-width: 575px) {
-        body header .picture-right-top {
+        body header .contact-title {
           top: 40vh;
           height: 30vh;
           width: 100%; } }
       @media (min-width: 576px) and (max-width: 767px) {
-        body header .picture-right-top {
+        body header .contact-title {
           top: 40vh;
           height: 30vh;
           width: 100%; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body header .picture-right-top {
+        body header .contact-title {
           top: 40vh;
           height: 30vh;
           width: 100%; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body header .picture-right-top {
+        body header .contact-title {
           top: 40vh;
           height: 30vh;
           width: 100%; } }
@@ -562,5 +588,35 @@ body {
         transition: 0.3s; }
         body .section-footer .icone i:hover {
           transform: scale(1.15); }
+  body .section-contact {
+    padding: 50px; }
+    body .section-contact label {
+      font-weight: bold;
+      color: #00B286; }
+    body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
+      border: none;
+      border-bottom: solid 1.5px #00B286;
+      margin-bottom: 30px;
+      width: 35vw;
+      background: none;
+      outline: none;
+      resize: none; }
+      @media (max-width: 575px) {
+        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
+          width: 65vw; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
+          width: 60vw; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
+          width: 60vw; } }
+    body .section-contact .btn {
+      background-color: #00B286;
+      color: white;
+      box-shadow: 5px 5px 30px #00000038;
+      border: none; }
+    body .section-contact .validation h2 {
+      color: #d43c0b;
+      font-size: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
