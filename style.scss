@@ -3,17 +3,18 @@ body{
     header{
         // height: 100vh;
         // background-color: white;
+        padding-bottom: 10vh;
         @media (max-width: 575px) {
-            height: 130vh;
+        
          }
          @media (min-width: 576px) and (max-width: 767px) { 
-            height: 130vh;
+        
           }
           @media (min-width: 768px) and (max-width: 991px) { 
-            height: 130vh;
+        
            }
            @media (min-width: 992px) and (max-width: 1199px) { 
-            height: 130vh;
+        
         }
         hr { 
             display: block;
@@ -35,12 +36,48 @@ body{
             color: #101010;
         }
         .logo{
-            position: fixed;
+            position: absolute;
             top: 10%;
             right: 10%;
             z-index: 1;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
+            @media (max-width: 575px) {
+                position: absolute;
+                top: 4%;
+                right: 15%;
+                z-index: 1;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+             }
+             @media (min-width: 576px) and (max-width: 767px) { 
+                position: absolute;
+                top: 4%;
+                right: 15%;
+                z-index: 1;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                position: absolute;
+                top: 4%;
+                right: 15%;
+                z-index: 1;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+               }
+               @media (min-width: 992px) and (max-width: 1199px) { 
+                position: absolute;
+                top: 4%;
+                right: 15%;
+                z-index: 1;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+            }
         }
         .hamburger {
             position: fixed;
@@ -48,16 +85,20 @@ body{
             left: 10%;
             z-index: 1;
             @media (max-width: 575px) {
-                left: 8%;
+                left: 12%;
+                top: 4%;
              }
              @media (min-width: 576px) and (max-width: 767px) { 
-                left: 8%;
+                left: 12%;
+                top: 4%;
             }
             @media (min-width: 768px) and (max-width: 991px) { 
                 left: 8%;
+                top: 4%;
                }
                @media (min-width: 992px) and (max-width: 1199px) { 
                 left: 8%;
+                top: 4%;
             }
         }
         .suivez {
@@ -76,14 +117,19 @@ body{
             background-color: #101010;
             border-radius: 5px;
             margin: 5px 0px;
+            @media (max-width: 575px) {
+         height: 3px;
+             
+             }
+             @media (min-width: 576px) and (max-width: 767px) { 
+                height: 3px;
+            }
             @media (min-width: 768px) and (max-width: 991px) { 
-                width: 65px;
-                height: 7px;
+                height: 3px;
                 margin: 10px 0px;
                }
                @media (min-width: 992px) and (max-width: 1199px) { 
-                width: 65px;
-                height: 7px;
+                height: 5px;
                 margin: 10px 0px;
             }
             &:hover{
@@ -187,88 +233,190 @@ body{
             }
         }
         .web-dev{
-            margin-top: 25vh;
-            margin-bottom: 5vh;
+            margin-top: 20vh;
+            margin-bottom: 3vh;
             h2{
                 font-size: 2.3rem;
+                @media (max-width: 575px) { 
+                    font-size: 2rem;
+                 }
+                 @media (min-width: 576px) and (max-width: 767px) { 
+                    font-size: 2.5rem;
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                    font-size: 4.5rem;
+                   }
+                   @media (min-width: 992px) and (max-width: 1199px) { 
+                    font-size: 4.5rem;
+                }
             }
             h3{
                 font-size: 1.2rem;
+                @media (max-width: 575px) { 
+                    font-size: 1rem;
+                 }
+                 @media (min-width: 576px) and (max-width: 767px) { 
+                    font-size: 2rem;
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                    font-size: 4.5rem;
+                   }
+                   @media (min-width: 992px) and (max-width: 1199px) { 
+                    font-size: 4.5rem;
+                }
             }
         }
-        .galerie{
-            a{
-                text-decoration: none;
+        .projets{
+            // box-shadow: 5px 8px 14px #0000007a;
+            .galerie{
+                box-shadow: 5px 8px 14px #0000007a;
+                a{
+                    text-decoration: none;
+                }
+                .pro1{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/vpvj.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
             }
-            .pro1{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/vpvj.png);
-                background-position: center;
-                background-size: cover;
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
             }
-            .pro2{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/blueasy.png);
-                background-position: center;
-                background-size: cover;
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
             }
-            .pro3{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/access_movie.png);
-                background-position: center;
-                background-size: cover;
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
             }
-            .pro4{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/explorateur.png);
-                background-position: center;
-                background-size: cover;
+                }
+                .pro2{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/blueasy.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
             }
-            .pro5{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/files-walk.png);
-                background-position: center;
-                background-size: cover;
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
             }
-            .pro6{
-                height: 25vh;
-                width: 20vw;
-                // background-color: black;
-                border: solid 1px white;
-                background: url(img/files-walk.png);
-                background-position: center;
-                background-size: cover;
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
             }
-            .hover{
-                background-color: white;
-                width: 20vw;
-                height: 100%;
-                text-align: center;
-                opacity: 0;
-                font-size: 2rem;
-                margin: 0;
-                padding: 25px;
-                color: black;
-                transition: .4s ease;   
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
             }
-            .hover:hover{
-    
-                opacity: 1;  
+                }
+                .pro3{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/access_movie.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
+            }
+                }
+                .pro4{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/run.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
+            }
+                }
+                .pro5{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/explorateur.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
+            }
+                }
+                .pro6{
+                    height: 30vh;
+                    width: 20vw;
+                    // background-color: black;
+                    border: solid 1px white;
+                    background: url(img/files-walk.png);
+                    background-position: center;
+                    background-size: cover;
+                    @media (max-width: 575px) {
+            width: 70vw;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            width: 70vw;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            width: 70vw;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            width: 70vw;
+            }
+                }
+                .hover{
+                    background-color: white;
+                    width: 20vw;
+                    height: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    font-size: 2rem;
+                    margin: 0;
+                    padding: 25px;
+                    color: black;
+                    transition: .4s ease;   
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+                .hover:hover{
+                    opacity: 1;  
+                }
             }
         }
         
@@ -329,21 +477,22 @@ body{
     .section-transition{
         // display: none !important;
         // background-color: #ededed;
+        background-color: #4bcaff;
         h1{
             padding-top: 15vh;
             padding-bottom: 10vh;
             max-width: 80vw;
             font-size: 5rem;
             font-family: 'Dosis', sans-serif;
-            color: #00B286;
+            color: white;
             margin: 0;
             @media (max-width: 575px) {
                 max-width: 90vw;
-                font-size: 2.2rem;
+                font-size: 1.5rem;
              }
              @media (min-width: 576px) and (max-width: 767px) { 
                 max-width: 90vw;
-                font-size: 2.2rem;
+                font-size: 1.5rem;
             }
             @media (min-width: 768px) and (max-width: 991px) { 
                 max-width: 90vw;
@@ -358,13 +507,13 @@ body{
             padding-bottom: 15vh;
             max-width: 50vw;
             font-size: 1.5rem;
-            color: #000000b5;
+            color: #ffffb5;
             @media (max-width: 575px) {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 max-width: 80vw;
              }
              @media (min-width: 576px) and (max-width: 767px) { 
-                font-size: 1.2rem;
+                font-size: 1rem;
                 max-width: 80vw;
             }
             @media (min-width: 768px) and (max-width: 991px) { 

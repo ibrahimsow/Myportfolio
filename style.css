@@ -1,323 +1,459 @@
 body {
   margin: 0; }
-  @media (max-width: 575px) {
-    body header {
-      height: 130vh; } }
-  @media (min-width: 576px) and (max-width: 767px) {
-    body header {
-      height: 130vh; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    body header {
-      height: 130vh; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    body header {
-      height: 130vh; } }
-  body header hr {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    width: 20vw;
-    color: #ffffff9c; }
-  body header .fa-chevron-up {
-    position: fixed;
-    top: 85%;
-    right: 3%;
-    z-index: 1;
-    font-size: 2rem;
-    color: #101010; }
-  body header .logo {
-    position: fixed;
-    top: 10%;
-    right: 10%;
-    z-index: 1;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800; }
-  body header .hamburger {
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    z-index: 1; }
-    @media (max-width: 575px) {
-      body header .hamburger {
-        left: 8%; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      body header .hamburger {
-        left: 8%; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body header .hamburger {
-        left: 8%; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body header .hamburger {
-        left: 8%; } }
-  body header .suivez {
-    position: absolute;
-    top: 3%;
-    right: 3%; }
-  body header .cv {
-    position: absolute;
-    top: 80%; }
-  body header .hamburger div {
-    width: 40px;
-    height: 5px;
-    background-color: #101010;
-    border-radius: 5px;
-    margin: 5px 0px; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body header .hamburger div {
-        width: 65px;
-        height: 7px;
-        margin: 10px 0px; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body header .hamburger div {
-        width: 65px;
-        height: 7px;
-        margin: 10px 0px; } }
-    body header .hamburger div:hover {
-      background-color: #FF5722;
-      transform: scale(1.2);
-      transition: .2s; }
-  body header .menu {
-    transition: 3s; }
-    body header .menu .showmenu {
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: -150vh;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1;
-      overflow-x: hidden;
-      transition: 1.5s;
-      background-color: #000000eb;
-      background-size: cover;
-      background-position: center; }
-      @media (max-width: 575px) {
-        body header .menu .showmenu {
-          background-color: #000000f0; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body header .menu .showmenu {
-          background-color: #000000f0; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body header .menu .showmenu {
-          background-color: #000000f0; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body header .menu .showmenu {
-          background-color: #000000f0; } }
-    body header .menu .nav {
-      list-style-type: none; }
-    body header .menu .nav-item {
-      margin: 10px;
-      text-align: center; }
-    body header .menu .nav-link {
-      font-size: 60px;
-      letter-spacing: 5px;
-      padding: 10px;
+  body header {
+    padding-bottom: 10vh; }
+    body header hr {
       display: block;
-      color: white;
-      font-family: "Dosis", sans-serif;
-      text-decoration: none;
-      transition: 0.3s; }
-      @media (max-width: 575px) {
-        body header .menu .nav-link {
-          font-size: 40px; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body header .menu .nav-link {
-          font-size: 40px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body header .menu .nav-link {
-          font-size: 40px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body header .menu .nav-link {
-          font-size: 40px; } }
-    body header .menu .nav-link:hover,
-    body header .menu .closeBtn:hover {
-      opacity: 0.7;
-      transform: scale(1.2); }
-    body header .menu .closeBtn {
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+      width: 20vw;
+      color: #ffffff9c; }
+    body header .fa-chevron-up {
+      position: fixed;
+      top: 85%;
+      right: 3%;
+      z-index: 1;
+      font-size: 2rem;
+      color: #101010; }
+    body header .logo {
       position: absolute;
       top: 10%;
       right: 10%;
-      font-size: 3rem;
-      color: white;
-      text-decoration: none;
-      font-family: "Dosis", sans-serif;
-      transition: 0.3s; }
-      @media (max-width: 575px) {
-        body header .menu .closeBtn {
-          font-size: 4.5rem; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body header .menu .closeBtn {
-          font-size: 4.5rem; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body header .menu .closeBtn {
-          font-size: 4.5rem; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body header .menu .closeBtn {
-          font-size: 4.5rem; } }
-  body header .web-dev {
-    margin-top: 25vh;
-    margin-bottom: 5vh; }
-    body header .web-dev h2 {
-      font-size: 2.3rem; }
-    body header .web-dev h3 {
-      font-size: 1.2rem; }
-  body header .galerie a {
-    text-decoration: none; }
-  body header .galerie .pro1 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/vpvj.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .pro2 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/blueasy.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .pro3 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/access_movie.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .pro4 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/explorateur.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .pro5 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/files-walk.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .pro6 {
-    height: 25vh;
-    width: 20vw;
-    border: solid 1px white;
-    background: url(img/files-walk.png);
-    background-position: center;
-    background-size: cover; }
-  body header .galerie .hover {
-    background-color: white;
-    width: 20vw;
-    height: 100%;
-    text-align: center;
-    opacity: 0;
-    font-size: 2rem;
-    margin: 0;
-    padding: 25px;
-    color: black;
-    transition: .4s ease; }
-  body header .galerie .hover:hover {
-    opacity: 1; }
-  body header .phone {
-    background-color: #202529;
-    background: url(img/picture-right.jpeg);
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 50vh;
-    right: 5vw;
-    height: 50vh;
-    width: 40vw;
-    padding: 15px;
-    margin-left: 5vw; }
-  body header .contact-title {
-    position: absolute;
-    top: 50vh;
-    left: 2vw;
-    height: 50vh;
-    width: 40vw;
-    padding: 15px;
-    margin-left: 5vw; }
-    body header .contact-title h1 {
-      font-size: 5rem;
-      letter-spacing: 7px;
+      z-index: 1;
       font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      color: #101010;
-      line-height: 7rem;
-      color: white; }
-    @media (max-width: 575px) {
-      body header .contact-title {
-        top: 40vh;
+      font-weight: 800; }
+      @media (max-width: 575px) {
+        body header .logo {
+          position: absolute;
+          top: 4%;
+          right: 15%;
+          z-index: 1;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+          font-size: 2rem; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body header .logo {
+          position: absolute;
+          top: 4%;
+          right: 15%;
+          z-index: 1;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+          font-size: 2rem; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body header .logo {
+          position: absolute;
+          top: 4%;
+          right: 15%;
+          z-index: 1;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+          font-size: 2rem; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body header .logo {
+          position: absolute;
+          top: 4%;
+          right: 15%;
+          z-index: 1;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+          font-size: 2rem; } }
+    body header .hamburger {
+      position: fixed;
+      top: 10%;
+      left: 10%;
+      z-index: 1; }
+      @media (max-width: 575px) {
+        body header .hamburger {
+          left: 12%;
+          top: 4%; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body header .hamburger {
+          left: 12%;
+          top: 4%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body header .hamburger {
+          left: 8%;
+          top: 4%; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body header .hamburger {
+          left: 8%;
+          top: 4%; } }
+    body header .suivez {
+      position: absolute;
+      top: 3%;
+      right: 3%; }
+    body header .cv {
+      position: absolute;
+      top: 80%; }
+    body header .hamburger div {
+      width: 40px;
+      height: 5px;
+      background-color: #101010;
+      border-radius: 5px;
+      margin: 5px 0px; }
+      @media (max-width: 575px) {
+        body header .hamburger div {
+          height: 3px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body header .hamburger div {
+          height: 3px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body header .hamburger div {
+          height: 3px;
+          margin: 10px 0px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body header .hamburger div {
+          height: 5px;
+          margin: 10px 0px; } }
+      body header .hamburger div:hover {
+        background-color: #FF5722;
+        transform: scale(1.2);
+        transition: .2s; }
+    body header .menu {
+      transition: 3s; }
+      body header .menu .showmenu {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: -150vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 1.5s;
+        background-color: #000000eb;
+        background-size: cover;
+        background-position: center; }
+        @media (max-width: 575px) {
+          body header .menu .showmenu {
+            background-color: #000000f0; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .menu .showmenu {
+            background-color: #000000f0; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .menu .showmenu {
+            background-color: #000000f0; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .menu .showmenu {
+            background-color: #000000f0; } }
+      body header .menu .nav {
+        list-style-type: none; }
+      body header .menu .nav-item {
+        margin: 10px;
+        text-align: center; }
+      body header .menu .nav-link {
+        font-size: 60px;
+        letter-spacing: 5px;
+        padding: 10px;
+        display: block;
+        color: white;
+        font-family: "Dosis", sans-serif;
+        text-decoration: none;
+        transition: 0.3s; }
+        @media (max-width: 575px) {
+          body header .menu .nav-link {
+            font-size: 40px; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .menu .nav-link {
+            font-size: 40px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .menu .nav-link {
+            font-size: 40px; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .menu .nav-link {
+            font-size: 40px; } }
+      body header .menu .nav-link:hover,
+      body header .menu .closeBtn:hover {
+        opacity: 0.7;
+        transform: scale(1.2); }
+      body header .menu .closeBtn {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        font-size: 3rem;
+        color: white;
+        text-decoration: none;
+        font-family: "Dosis", sans-serif;
+        transition: 0.3s; }
+        @media (max-width: 575px) {
+          body header .menu .closeBtn {
+            font-size: 4.5rem; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .menu .closeBtn {
+            font-size: 4.5rem; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .menu .closeBtn {
+            font-size: 4.5rem; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .menu .closeBtn {
+            font-size: 4.5rem; } }
+    body header .web-dev {
+      margin-top: 20vh;
+      margin-bottom: 3vh; }
+      body header .web-dev h2 {
+        font-size: 2.3rem; }
+        @media (max-width: 575px) {
+          body header .web-dev h2 {
+            font-size: 2rem; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .web-dev h2 {
+            font-size: 2.5rem; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .web-dev h2 {
+            font-size: 4.5rem; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .web-dev h2 {
+            font-size: 4.5rem; } }
+      body header .web-dev h3 {
+        font-size: 1.2rem; }
+        @media (max-width: 575px) {
+          body header .web-dev h3 {
+            font-size: 1rem; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .web-dev h3 {
+            font-size: 2rem; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .web-dev h3 {
+            font-size: 4.5rem; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .web-dev h3 {
+            font-size: 4.5rem; } }
+    body header .projets .galerie {
+      box-shadow: 5px 8px 14px #0000007a; }
+      body header .projets .galerie a {
+        text-decoration: none; }
+      body header .projets .galerie .pro1 {
         height: 30vh;
-        width: 100%; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      body header .contact-title {
-        top: 40vh;
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/vpvj.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro1 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro1 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro1 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro1 {
+            width: 70vw; } }
+      body header .projets .galerie .pro2 {
         height: 30vh;
-        width: 100%; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body header .contact-title {
-        top: 40vh;
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/blueasy.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro2 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro2 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro2 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro2 {
+            width: 70vw; } }
+      body header .projets .galerie .pro3 {
         height: 30vh;
-        width: 100%; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body header .contact-title {
-        top: 40vh;
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/access_movie.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro3 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro3 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro3 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro3 {
+            width: 70vw; } }
+      body header .projets .galerie .pro4 {
         height: 30vh;
-        width: 100%; } }
-  body .section-transition h1 {
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    max-width: 80vw;
-    font-size: 5rem;
-    font-family: 'Dosis', sans-serif;
-    color: #00B286;
-    margin: 0; }
-    @media (max-width: 575px) {
-      body .section-transition h1 {
-        max-width: 90vw;
-        font-size: 2.2rem; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      body .section-transition h1 {
-        max-width: 90vw;
-        font-size: 2.2rem; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body .section-transition h1 {
-        max-width: 90vw;
-        font-size: 4rem; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body .section-transition h1 {
-        max-width: 90vw;
-        font-size: 4rem; } }
-  body .section-transition h2 {
-    padding-bottom: 15vh;
-    max-width: 50vw;
-    font-size: 1.5rem;
-    color: #000000b5; }
-    @media (max-width: 575px) {
-      body .section-transition h2 {
-        font-size: 1.2rem;
-        max-width: 80vw; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      body .section-transition h2 {
-        font-size: 1.2rem;
-        max-width: 80vw; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body .section-transition h2 {
-        font-size: 2.2rem;
-        max-width: 80vw; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body .section-transition h2 {
-        font-size: 2.2rem;
-        max-width: 80vw; } }
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/run.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro4 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro4 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro4 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro4 {
+            width: 70vw; } }
+      body header .projets .galerie .pro5 {
+        height: 30vh;
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/explorateur.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro5 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro5 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro5 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro5 {
+            width: 70vw; } }
+      body header .projets .galerie .pro6 {
+        height: 30vh;
+        width: 20vw;
+        border: solid 1px white;
+        background: url(img/files-walk.png);
+        background-position: center;
+        background-size: cover; }
+        @media (max-width: 575px) {
+          body header .projets .galerie .pro6 {
+            width: 70vw; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body header .projets .galerie .pro6 {
+            width: 70vw; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body header .projets .galerie .pro6 {
+            width: 70vw; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body header .projets .galerie .pro6 {
+            width: 70vw; } }
+      body header .projets .galerie .hover {
+        background-color: white;
+        width: 20vw;
+        height: 100%;
+        text-align: center;
+        opacity: 0;
+        font-size: 2rem;
+        margin: 0;
+        padding: 25px;
+        color: black;
+        transition: .4s ease; }
+        body header .projets .galerie .hover h4 {
+          font-size: 1rem; }
+      body header .projets .galerie .hover:hover {
+        opacity: 1; }
+    body header .phone {
+      background-color: #202529;
+      background: url(img/picture-right.jpeg);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 50vh;
+      right: 5vw;
+      height: 50vh;
+      width: 40vw;
+      padding: 15px;
+      margin-left: 5vw; }
+    body header .contact-title {
+      position: absolute;
+      top: 50vh;
+      left: 2vw;
+      height: 50vh;
+      width: 40vw;
+      padding: 15px;
+      margin-left: 5vw; }
+      body header .contact-title h1 {
+        font-size: 5rem;
+        letter-spacing: 7px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #101010;
+        line-height: 7rem;
+        color: white; }
+      @media (max-width: 575px) {
+        body header .contact-title {
+          top: 40vh;
+          height: 30vh;
+          width: 100%; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body header .contact-title {
+          top: 40vh;
+          height: 30vh;
+          width: 100%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body header .contact-title {
+          top: 40vh;
+          height: 30vh;
+          width: 100%; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body header .contact-title {
+          top: 40vh;
+          height: 30vh;
+          width: 100%; } }
+  body .section-transition {
+    background-color: #4bcaff; }
+    body .section-transition h1 {
+      padding-top: 15vh;
+      padding-bottom: 10vh;
+      max-width: 80vw;
+      font-size: 5rem;
+      font-family: 'Dosis', sans-serif;
+      color: white;
+      margin: 0; }
+      @media (max-width: 575px) {
+        body .section-transition h1 {
+          max-width: 90vw;
+          font-size: 1.5rem; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body .section-transition h1 {
+          max-width: 90vw;
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .section-transition h1 {
+          max-width: 90vw;
+          font-size: 4rem; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body .section-transition h1 {
+          max-width: 90vw;
+          font-size: 4rem; } }
+    body .section-transition h2 {
+      padding-bottom: 15vh;
+      max-width: 50vw;
+      font-size: 1.5rem;
+      color: #ffffb5; }
+      @media (max-width: 575px) {
+        body .section-transition h2 {
+          font-size: 1rem;
+          max-width: 80vw; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body .section-transition h2 {
+          font-size: 1rem;
+          max-width: 80vw; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .section-transition h2 {
+          font-size: 2.2rem;
+          max-width: 80vw; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body .section-transition h2 {
+          font-size: 2.2rem;
+          max-width: 80vw; } }
   body .section-code {
     height: 70vh;
     background: url(img/code.jpeg);
