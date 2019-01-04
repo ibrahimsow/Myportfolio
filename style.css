@@ -170,46 +170,46 @@ body {
       font-size: 1.2rem; }
   body header .galerie a {
     text-decoration: none; }
-  body header .galerie .pro {
+  body header .galerie .pro1 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
     background: url(img/vpvj.png);
     background-position: center;
     background-size: cover; }
-  body header .galerie .pro {
+  body header .galerie .pro2 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
-    background: url(img/vpvj.png);
+    background: url(img/blueasy.png);
     background-position: center;
     background-size: cover; }
-  body header .galerie .pro {
+  body header .galerie .pro3 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
-    background: url(img/vpvj.png);
+    background: url(img/access_movie.png);
     background-position: center;
     background-size: cover; }
-  body header .galerie .pro {
+  body header .galerie .pro4 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
-    background: url(img/vpvj.png);
+    background: url(img/explorateur.png);
     background-position: center;
     background-size: cover; }
-  body header .galerie .pro {
+  body header .galerie .pro5 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
-    background: url(img/vpvj.png);
+    background: url(img/files-walk.png);
     background-position: center;
     background-size: cover; }
-  body header .galerie .pro {
+  body header .galerie .pro6 {
     height: 25vh;
     width: 20vw;
     border: solid 1px white;
-    background: url(img/vpvj.png);
+    background: url(img/files-walk.png);
     background-position: center;
     background-size: cover; }
   body header .galerie .hover {
