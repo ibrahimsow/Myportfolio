@@ -25,7 +25,9 @@ body {
       right: 10%;
       z-index: 1;
       font-family: 'Montserrat', sans-serif;
-      font-weight: 800; }
+      font-weight: 800;
+      height: 100px;
+      width: auto; }
       @media (max-width: 575px) {
         body header .logo {
           position: absolute;
@@ -456,7 +458,7 @@ body {
           max-width: 80vw; } }
   body .section-code {
     height: 70vh;
-    background: url(img/code.jpeg);
+    background: url(img/doubleexplosure.jpg);
     background-size: cover;
     background-position: center; }
   body .section-projets {
