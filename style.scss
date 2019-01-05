@@ -4,6 +4,7 @@ body{
         // height: 100vh;
         // background-color: white;
         padding-bottom: 10vh;
+        // padding: 0 !important;
         @media (max-width: 575px) {
         
          }
@@ -34,6 +35,19 @@ body{
             z-index: 1;
             font-size: 2rem;
             color: #101010;
+            @media (max-width: 575px) {
+                
+                right: auto;
+             }
+             @media (min-width: 576px) and (max-width: 767px) {
+                 right: auto;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                right: auto;
+               }
+               @media (min-width: 992px) and (max-width: 1199px) {
+                   right: auto;
+            }
         }
         .logo{
             position: absolute;
@@ -46,12 +60,13 @@ body{
             width: auto;
             @media (max-width: 575px) {
                 position: absolute;
-                top: 4%;
+                top: 2%;
                 right: 15%;
                 z-index: 1;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 800;
                 font-size: 2rem;
+                height: 70px;
              }
              @media (min-width: 576px) and (max-width: 767px) { 
                 position: absolute;
@@ -61,6 +76,7 @@ body{
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 800;
                 font-size: 2rem;
+                height: 90px;
             }
             @media (min-width: 768px) and (max-width: 991px) { 
                 position: absolute;
@@ -237,10 +253,26 @@ body{
         .web-dev{
             margin-top: 20vh;
             margin-bottom: 3vh;
+            @media (max-width: 575px) { 
+                 margin-top: 25vh;
+            margin-bottom: 15vh;
+             }
+             @media (min-width: 576px) and (max-width: 767px) { 
+                 margin-top: 25vh;
+            margin-bottom: 15vh;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                 margin-top: 25vh;
+            margin-bottom: 15vh;
+               }
+               @media (min-width: 992px) and (max-width: 1199px) { 
+                 margin-top: 25vh;
+            margin-bottom: 15vh;
+            }
             h2{
                 font-size: 2.3rem;
                 @media (max-width: 575px) { 
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                  }
                  @media (min-width: 576px) and (max-width: 767px) { 
                     font-size: 2.5rem;
@@ -272,6 +304,18 @@ body{
             // box-shadow: 5px 8px 14px #0000007a;
             .galerie{
                 box-shadow: 5px 8px 14px #0000007a;
+                @media (max-width: 575px) {
+                    box-shadow: none;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) { 
+                    box-shadow: none;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) { 
+                    box-shadow: none;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) { 
+                    box-shadow: none;
+                    }
                 a{
                     text-decoration: none;
                 }
@@ -480,6 +524,7 @@ body{
         // display: none !important;
         // background-color: #ededed;
         background-color: #4bcaff;
+        padding: 0 !important;
         h1{
             padding-top: 15vh;
             padding-bottom: 10vh;
@@ -534,18 +579,20 @@ body{
         background: url(img/doubleexplosure.jpg);
         background-size: cover;
         background-position: center;
-        h5{
-            font-size: 2.9rem;
-            max-width: 25vw;
-            margin-right: 15vw;
-            color: #005c84e0;
-        }
-        p {
-            font-size: 1rem;
-            max-width: 25vw;
-            margin-right: 15vw;
-            text-align:justify;
-        }
+        padding: 0 !important;
+        margin: 0;
+        @media (max-width: 575px) {
+            // height: auto;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            // height: auto;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            // height: auto;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            // height: auto;
+            }
     }
     .section-projets{
         position: relative;
@@ -729,14 +776,39 @@ body{
           }
     }
     .section-footer{
-        background-color: #ff5721;
+        background-color: #343a40;
         color: white;
         font-family: 'Montserrat', sans-serif;
+        padding: 0 !important;
         h4{
             font-size: 2.5rem;
             letter-spacing: 7px;
-            margin-top: 100px;
-            margin-bottom: 30px;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            @media (max-width: 575px) {
+                    font-size: 1.5rem;
+                    max-width: 80vw;
+                    letter-spacing: 5px;
+
+                }
+                @media (min-width: 576px) and (max-width: 767px) { 
+                    font-size: 1.5rem;
+                    max-width: 80vw;
+                    letter-spacing: 5px;
+
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                    font-size: 1.5rem;
+                    max-width: 80vw;
+                    letter-spacing: 5px;
+
+                }
+                @media (min-width: 992px) and (max-width: 1199px) { 
+                    font-size: 1.5rem;
+                    max-width: 80vw;
+                    letter-spacing: 5px;
+
+                }
         }
         .icone{
             margin-top: 20px;
@@ -745,10 +817,37 @@ body{
                 font-size: 3rem;
                 margin: 0px 20px;
                 transition: 0.3s;
+                @media (max-width: 575px) {
+                    font-size: 2rem;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) { 
+                    font-size: 2rem;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) { 
+                    font-size: 2rem;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) { 
+                    font-size: 2rem;
+                    }
                 &:hover{
                     transform: scale(1.15);
                 }
             }
+        }
+        p{
+            margin-bottom: 3vh;
+            @media (max-width: 575px) {
+                font-size: 0.7rem;
+                }
+                @media (min-width: 576px) and (max-width: 767px) { 
+                font-size: 0.7rem;
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                font-size: 0.7rem;
+                }
+                @media (min-width: 992px) and (max-width: 1199px) { 
+                font-size: 0.7rem;
+                }
         }
     }
     // contact

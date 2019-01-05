@@ -87,7 +87,11 @@ monhamberger.addEventListener("click", function(showmenu){
  })
 
  // scroll function
+//  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
+//    }else {
+//     AOS.init();
+//    }
  AOS.init();
 
  // I know that the code could be better.
