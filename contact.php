@@ -40,9 +40,6 @@
             </ul>
             </div>
         </div>
-        <i class="fas fa-desktop"></i>
-        <i class="fas fa-tablet-alt"></i>
-        <i class="fas fa-mobile-alt"></i>
         <a href="#header"><i class="fas fa-chevron-up"></i></a> 
         <div class="bg-up">
         </div>

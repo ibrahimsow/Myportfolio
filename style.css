@@ -104,9 +104,9 @@ body {
   100% {
     transform: rotate(360deg); } }
     body header .logo {
-      position: absolute;
+      position: fixed;
       top: 4%;
-      right: 10%;
+      right: 7%;
       z-index: 1;
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
@@ -115,13 +115,13 @@ body {
       @media (max-width: 575px) {
         body header .logo {
           position: absolute;
-          top: 2%;
-          right: 15%;
+          top: 1%;
+          right: 3%;
           z-index: 1;
           font-family: 'Montserrat', sans-serif;
           font-weight: 800;
           font-size: 2rem;
-          height: 70px; } }
+          height: 80px; } }
       @media (min-width: 576px) and (max-width: 767px) {
         body header .logo {
           position: absolute;
@@ -199,7 +199,7 @@ body {
           height: 5px;
           margin: 10px 0px; } }
       body header .hamburger div:hover {
-        background-color: #FF5722;
+        background-color: #2bb9008e;
         transform: scale(1.2);
         transition: .2s; }
     body header .menu {
@@ -524,10 +524,10 @@ body {
           top: 40vh;
           height: 30vh;
           width: 100%; } }
-  body .section-transition {
+  body .section-citation {
     background-color: #4bcaff;
     padding: 0 !important; }
-    body .section-transition h1 {
+    body .section-citation h1 {
       padding-top: 15vh;
       padding-bottom: 10vh;
       max-width: 80vw;
@@ -536,211 +536,80 @@ body {
       color: white;
       margin: 0; }
       @media (max-width: 575px) {
-        body .section-transition h1 {
+        body .section-citation h1 {
           max-width: 90vw;
           font-size: 1.5rem; } }
       @media (min-width: 576px) and (max-width: 767px) {
-        body .section-transition h1 {
+        body .section-citation h1 {
           max-width: 90vw;
           font-size: 1.5rem; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body .section-transition h1 {
+        body .section-citation h1 {
           max-width: 90vw;
           font-size: 4rem; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body .section-transition h1 {
+        body .section-citation h1 {
           max-width: 90vw;
           font-size: 4rem; } }
-    body .section-transition h2 {
+    body .section-citation h2 {
       padding-bottom: 15vh;
       max-width: 50vw;
       font-size: 1.5rem;
       color: white; }
       @media (max-width: 575px) {
-        body .section-transition h2 {
+        body .section-citation h2 {
           font-size: 1rem;
           max-width: 80vw; } }
       @media (min-width: 576px) and (max-width: 767px) {
-        body .section-transition h2 {
+        body .section-citation h2 {
           font-size: 1rem;
           max-width: 80vw; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body .section-transition h2 {
+        body .section-citation h2 {
           font-size: 2.2rem;
           max-width: 80vw; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body .section-transition h2 {
+        body .section-citation h2 {
           font-size: 2.2rem;
           max-width: 80vw; } }
-  body .section-code {
+  body .section-portrait {
     height: 70vh;
     background: url(img/doubleexplosure.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 !important;
     margin: 0; }
-  body .section-projets {
-    position: relative;
-    height: 350vh;
-    text-decoration: none; }
-    body .section-projets .fa-github-square {
-      font-size: 3rem;
-      transition: .6s;
-      margin-top: 10px;
-      color: black; }
-      body .section-projets .fa-github-square:hover {
-        transform: scale(1.2); }
-    body .section-projets .fa-gitlab {
-      font-size: 3rem;
-      transition: .6s;
-      margin-top: 10px;
-      color: black; }
-      body .section-projets .fa-gitlab:hover {
-        transform: scale(1.2); }
-    body .section-projets .projet1 {
-      background: url(img/movie.png);
-      background-size: cover;
-      background-position: center;
-      box-shadow: -5px 10px 30px #00000075;
-      position: absolute;
-      top: 20vh;
-      left: 7vw;
-      height: 50vh;
-      width: 40vw; }
-    body .section-projets .description1 {
-      position: absolute;
-      top: 20vh;
-      right: 7vw;
-      height: 50vh;
-      width: 40vw;
-      color: #585858;
-      font-size: 1.3rem; }
-      body .section-projets .description1 h3 {
-        color: #741406;
-        font-size: 3rem;
-        margin-bottom: 30px; }
-      body .section-projets .description1 .text-description {
-        font-size: 1rem;
-        padding-top: 20px; }
-    body .section-projets .projet2 {
-      background: url(img/vpvj.png);
-      background-size: cover;
-      background-position: center;
-      box-shadow: -5px 10px 30px #00000075;
-      position: absolute;
-      top: 100vh;
-      right: 7vw;
-      height: 50vh;
-      width: 40vw; }
-    body .section-projets .description2 {
-      position: absolute;
-      top: 100vh;
-      left: 7vw;
-      height: 50vh;
-      width: 40vw;
-      color: #585858;
-      font-size: 1.3rem; }
-      body .section-projets .description2 h3 {
-        color: #3e68a2;
-        font-size: 3rem;
-        margin-bottom: 30px; }
-      body .section-projets .description2 .text-description {
-        font-size: 1rem;
-        padding-top: 20px; }
-    body .section-projets .projet3 {
-      background-color: black;
-      position: absolute;
-      top: 180vh;
-      left: 7vw;
-      height: 50vh;
-      width: 40vw; }
-    body .section-projets .description3 {
-      position: absolute;
-      top: 180vh;
-      right: 7vw;
-      height: 50vh;
-      width: 40vw;
-      color: #585858;
-      font-size: 1.3rem; }
-      body .section-projets .description3 h3 {
-        color: #3e68a2;
-        font-size: 3rem;
-        margin-bottom: 30px; }
-      body .section-projets .description3 .text-description {
-        font-size: 1rem;
-        padding-top: 20px; }
-    body .section-projets .projet4 {
-      background-color: black;
-      position: absolute;
-      top: 260vh;
-      right: 7vw;
-      height: 50vh;
-      width: 40vw; }
-    body .section-projets .description4 {
-      position: absolute;
-      top: 260vh;
-      left: 7vw;
-      height: 50vh;
-      width: 40vw;
-      color: #585858;
-      font-size: 1.3rem; }
-      body .section-projets .description4 h3 {
-        color: #3e68a2;
-        font-size: 3rem;
-        margin-bottom: 30px; }
-      body .section-projets .description4 .text-description {
-        font-size: 1rem;
-        padding-top: 20px; }
   body .section-apropos {
+    height: 100vh;
     padding: 0; }
-    body .section-apropos .block {
-      width: 70%;
-      height: 70vh;
-      position: relative;
-      overflow: hidden;
-      font-size: 16px;
-      margin: 20vh;
-      box-shadow: -5px 10px 40px #0000003b; }
-    body .section-apropos .block h2 {
-      position: relative;
-      display: block;
-      text-align: center;
-      margin: 0;
-      top: 40%;
-      text-transform: uppercase;
-      transform: translateY(-50%);
-      font-size: 4vw;
-      color: white;
-      font-weight: 400;
-      text-shadow: 5px 10px 40px #000000; }
-    body .section-apropos .block p {
-      position: relative;
-      display: block;
-      text-align: center;
-      margin: 0;
-      top: 45%;
-      transform: translateY(-50%);
-      font-size: 1.2vw;
-      color: white;
-      font-weight: 400;
-      text-shadow: 5px 10px 40px #000000; }
-    body .section-apropos .img-parallax {
-      width: 100vmax;
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      pointer-events: none; }
+    body .section-apropos h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      max-width: 35vw;
+      margin-bottom: 3vh; }
+    body .section-apropos .bio {
+      text-align: justify;
+      max-width: 35vw;
+      font-size: .9rem; }
+    body .section-apropos .linkedin {
+      text-decoration: none;
+      font-size: .9rem;
+      color: #333333; }
   body .section-footer {
     background-color: #343a40;
+    background: linear-gradient(rgba(0, 156, 181, 0.18), rgba(0, 0, 0, 0.82)), url(img/doubleexplosure.jpg);
+    background-size: cover;
+    background-position: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 0 !important; }
     body .section-footer h4 {
-      font-size: 2.5rem;
-      letter-spacing: 7px;
-      margin-top: 5vh;
+      font-size: 3rem;
+      letter-spacing: 4px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 15vh;
       margin-bottom: 5vh; }
       @media (max-width: 575px) {
         body .section-footer h4 {
@@ -763,8 +632,8 @@ body {
           max-width: 80vw;
           letter-spacing: 5px; } }
     body .section-footer .icone {
-      margin-top: 20px;
-      margin-bottom: 70px; }
+      margin-top: 5vh;
+      margin-bottom: 15vh; }
       body .section-footer .icone i {
         font-size: 3rem;
         margin: 0px 20px;
