@@ -1,8 +1,16 @@
+// #el__fIKrZmZ8 {
+    
+//     position: fixed;
+//     height: 160px;
+//     top: 3%;
+//     right: 7%;
+// }
+
 body{
     margin: 0;
     header{
         // height: 100vh;
-        // background-color: white;
+        // background-color: white; 
         padding-bottom: 10vh;
         // padding: 0 !important;
         @media (max-width: 575px) {
@@ -37,16 +45,16 @@ body{
             color: #101010;
             @media (max-width: 575px) {
                 
-                right: auto;
+                display: none;
              }
              @media (min-width: 576px) and (max-width: 767px) {
-                 right: auto;
+                 display: none;
             }
             @media (min-width: 768px) and (max-width: 991px) {
-                right: auto;
+                display: none; 
                }
                @media (min-width: 992px) and (max-width: 1199px) {
-                   right: auto;
+                   display: none;
             }
         }
         .lds-roller {
@@ -148,9 +156,9 @@ body{
             }
           }
           
-        .logo{
+          #el__fIKrZmZ8{
             position: fixed;
-            top: 4%;
+            top: 3%;
             right: 7%;
             z-index: 1;
             font-family: 'Montserrat', sans-serif;
@@ -160,29 +168,27 @@ body{
             @media (max-width: 575px) {
                 position: absolute;
                 top: 1%;
-                right: 3%; 
-                z-index: 1;
-                font-family: 'Montserrat', sans-serif;
+                right: 2%;
                 font-weight: 800;
                 font-size: 2rem;
                 height: 80px;
              } 
              @media (min-width: 576px) and (max-width: 767px) { 
                 position: absolute;
-                top: 4%;
-                right: 15%;
-                z-index: 1;
-                font-family: 'Montserrat', sans-serif;
+                top: 4%; 
+                right: 2%;
                 font-weight: 800;
                 font-size: 2rem;
                 height: 90px;
+            }
+            @media (min-width: 576px) and (max-width: 767px) and(orientation: landscape) { 
+                right: 3%;
+                top: 1%;
             }
             @media (min-width: 768px) and (max-width: 991px) { 
                 position: absolute;
                 top: 4%;
                 right: 15%;
-                z-index: 1;
-                font-family: 'Montserrat', sans-serif;
                 font-weight: 800;
                 font-size: 2rem;
                }
@@ -190,8 +196,6 @@ body{
                 position: absolute;
                 top: 4%;
                 right: 15%;
-                z-index: 1;
-                font-family: 'Montserrat', sans-serif;
                 font-weight: 800;
                 font-size: 2rem;
             }
@@ -202,12 +206,16 @@ body{
             left: 10%;
             z-index: 1;
             @media (max-width: 575px) {
-                left: 12%;
-                top: 4%;
+                left: 10%;
+                top: 5%;
              }
-             @media (min-width: 576px) and (max-width: 767px) { 
-                left: 12%;
+             @media (min-width: 576px) and (max-width: 767px) and(orientation: portrait) { 
+                left: 7%;
                 top: 4%;
+            }
+            @media (min-width: 576px) and (max-width: 767px) and(orientation: landscape) { 
+                left: 7%;
+                top: 7%;
             }
             @media (min-width: 768px) and (max-width: 991px) { 
                 left: 8%;
@@ -236,7 +244,6 @@ body{
             margin: 5px 0px;
             @media (max-width: 575px) {
          height: 3px;
-             
              }
              @media (min-width: 576px) and (max-width: 767px) { 
                 height: 3px;
@@ -375,13 +382,13 @@ body{
                     font-size: 1.5rem;
                  }
                  @media (min-width: 576px) and (max-width: 767px) { 
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                 }
                 @media (min-width: 768px) and (max-width: 991px) { 
-                    font-size: 4.5rem;
+                    font-size: 2.3rem;
                    }
                    @media (min-width: 992px) and (max-width: 1199px) { 
-                    font-size: 4.5rem;
+                    font-size: 2.3rem;
                 }
             }
             h3{
@@ -390,13 +397,13 @@ body{
                     font-size: 1rem;
                  }
                  @media (min-width: 576px) and (max-width: 767px) { 
-                    font-size: 2rem;
+                    font-size: 1rem;
                 }
                 @media (min-width: 768px) and (max-width: 991px) { 
-                    font-size: 4.5rem;
+                    font-size: 1.5rem;
                    }
                    @media (min-width: 992px) and (max-width: 1199px) { 
-                    font-size: 4.5rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -427,18 +434,30 @@ body{
                     background: url(img/vpvj.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    } 
+                       @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    } 
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .pro2{
                     height: 30vh;
@@ -448,18 +467,30 @@ body{
                     background: url(img/blueasy.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .pro3{
                     height: 30vh;
@@ -469,18 +500,30 @@ body{
                     background: url(img/access_movie.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .pro4{
                     height: 30vh;
@@ -490,18 +533,30 @@ body{
                     background: url(img/run.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .pro5{
                     height: 30vh;
@@ -511,18 +566,30 @@ body{
                     background: url(img/explorateur.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .pro6{
                     height: 30vh;
@@ -532,18 +599,30 @@ body{
                     background: url(img/files-walk.png);
                     background-position: center;
                     background-size: cover;
-                    @media (max-width: 575px) {
-            width: 70vw;
-            }
-            @media (min-width: 576px) and (max-width: 767px) { 
-            width: 70vw;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-            width: 70vw;
-            }
-            @media (min-width: 992px) and (max-width: 1199px) { 
-            width: 70vw;
-            }
+                    @media (max-width: 575px) and (orientation: portrait){
+                    width: 70vw;
+                    }
+                    @media (max-width: 575px) and (orientation: landscape) {
+                        width: 70vw;
+                        height: 65vh;
+                    }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
+                      @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+                    width: 70vw;
+                    height: 65vh;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) { 
+                    width: 70vw;
+                    }
                 }
                 .hover{
                     background-color: white;
@@ -697,68 +776,73 @@ body{
     .section-apropos{
         height: 100vh;
         padding: 0;
-        h1{
-            font-size: 3rem;
-            letter-spacing: 2px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
+        @media (max-width: 575px) {
+        height: auto;
+        padding: 20px;
+        }
+        @media (min-width: 576px) and (max-width: 767px) { 
+        height: auto;
+        padding: 20px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) { 
+        height: auto;
+        padding: 20px;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) { 
+        height: auto;
+        padding: 20px;
+        }
+        .presentation{
             max-width: 35vw;
-            margin-bottom: 3vh;
+            @media (max-width: 575px) {
+            max-width: 100%;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+                max-width: 100%;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                max-width: 100%;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+                max-width: 100%;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+            h1{
+                font-size: 3rem;
+                letter-spacing: 2px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                margin-bottom: 3vh;
+                @media (max-width: 575px) {
+                font-size: 2rem;
+                }
+                @media (min-width: 576px) and (max-width: 767px) { 
+                font-size: 2rem;
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                font-size: 2rem;
+                }
+                @media (min-width: 992px) and (max-width: 1199px) { 
+                font-size: 2rem;
+                }
+            }
+            .bio{
+                text-align: justify;
+                font-size: .9rem;
+            }
+            .linkedin{
+                text-decoration: none;
+                font-size: .9rem;
+                color: #333333;
+            }
         }
-        .bio{
-            text-align: justify;
-            max-width: 35vw;
-            font-size: .9rem;
-        }
-        .linkedin{
-            text-decoration: none;
-            font-size: .9rem;
-            color: #333333;
-        }
-        // .block{
-        //     width: 70%;
-        //     height: 70vh;
-        //     position: relative;
-        //     overflow: hidden;
-        //     font-size: 16px;
-        //     margin: 20vh;
-        //     box-shadow: -5px 10px 40px #0000003b;
-        //   }
-        //   .block h2{
-        //     position: relative;
-        //     display: block;
-        //     text-align: center;
-        //     margin: 0;
-        //     top: 40%;
-        //     text-transform: uppercase;
-        //     transform: translateY(-50%);
-        //     font-size: 4vw;
-        //     color: white;
-        //     font-weight: 400;
-        //     text-shadow: 5px 10px 40px #000000;
-        //   }
-        //   .block p{
-        //     position: relative;
-        //     display: block;
-        //     text-align: center;
-        //     margin: 0;
-        //     top: 45%;
-        //     // text-transform: uppercase;
-        //     transform: translateY(-50%);
-        //     font-size: 1.2vw;
-        //     color: white;
-        //     font-weight: 400;
-        //     text-shadow: 5px 10px 40px #000000;
-        //   }
-        //   .img-parallax {
-        //     width: 100vmax;
-        //     z-index: -1;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 50%;
-        //     transform: translate(-50%,0);
-        //     pointer-events: none; 
-        //   }
     }
     .section-footer{
         background-color: #343a40;
@@ -768,6 +852,10 @@ body{
         color: white;
         font-family: 'Montserrat', sans-serif;
         padding: 0 !important;
+        a{
+            text-decoration: none;
+            color: white;
+        }
         h4{
             font-size: 3rem;
             letter-spacing: 4px;
@@ -778,25 +866,25 @@ body{
                     font-size: 1.5rem;
                     max-width: 80vw;
                     letter-spacing: 5px;
-
+                  margin-top: 5vh;
                 }
                 @media (min-width: 576px) and (max-width: 767px) { 
                     font-size: 1.5rem;
                     max-width: 80vw;
                     letter-spacing: 5px;
-
+                      margin-top: 5vh;
                 }
                 @media (min-width: 768px) and (max-width: 991px) { 
                     font-size: 1.5rem;
                     max-width: 80vw;
                     letter-spacing: 5px;
-
+                      margin-top: 5vh;
                 }
                 @media (min-width: 992px) and (max-width: 1199px) { 
                     font-size: 1.5rem;
                     max-width: 80vw;
                     letter-spacing: 5px;
-
+                      margin-top: 5vh;
                 }
         }
         .icone{

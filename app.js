@@ -82,9 +82,10 @@ monhamberger.addEventListener("click", function(showmenu){
  closemenuapropos.addEventListener("click", function(hidemenu){
      document.querySelector(".showmenu").style.top = "-150vh";
  })
+ /*
  closemenucontact.addEventListener("click", function(hidemenu){
      document.querySelector(".showmenu").style.top = "-150vh";
- })
+ })*/
 
  // scroll function
 //  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

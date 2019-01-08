@@ -21,16 +21,16 @@ body {
       color: #101010; }
       @media (max-width: 575px) {
         body header .fa-chevron-up {
-          right: auto; } }
+          display: none; } }
       @media (min-width: 576px) and (max-width: 767px) {
         body header .fa-chevron-up {
-          right: auto; } }
+          display: none; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body header .fa-chevron-up {
-          right: auto; } }
+          display: none; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body header .fa-chevron-up {
-          right: auto; } }
+          display: none; } }
     body header .lds-roller {
       display: inline-block;
       position: absolute;
@@ -103,9 +103,9 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-    body header .logo {
+    body header #el__fIKrZmZ8 {
       position: fixed;
-      top: 4%;
+      top: 3%;
       right: 7%;
       z-index: 1;
       font-family: 'Montserrat', sans-serif;
@@ -113,41 +113,37 @@ body {
       height: 160px;
       width: auto; }
       @media (max-width: 575px) {
-        body header .logo {
+        body header #el__fIKrZmZ8 {
           position: absolute;
           top: 1%;
-          right: 3%;
-          z-index: 1;
-          font-family: 'Montserrat', sans-serif;
+          right: 2%;
           font-weight: 800;
           font-size: 2rem;
           height: 80px; } }
       @media (min-width: 576px) and (max-width: 767px) {
-        body header .logo {
+        body header #el__fIKrZmZ8 {
           position: absolute;
           top: 4%;
-          right: 15%;
-          z-index: 1;
-          font-family: 'Montserrat', sans-serif;
+          right: 2%;
           font-weight: 800;
           font-size: 2rem;
           height: 90px; } }
+      @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+        body header #el__fIKrZmZ8 {
+          right: 3%;
+          top: 1%; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body header .logo {
+        body header #el__fIKrZmZ8 {
           position: absolute;
           top: 4%;
           right: 15%;
-          z-index: 1;
-          font-family: 'Montserrat', sans-serif;
           font-weight: 800;
           font-size: 2rem; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body header .logo {
+        body header #el__fIKrZmZ8 {
           position: absolute;
           top: 4%;
           right: 15%;
-          z-index: 1;
-          font-family: 'Montserrat', sans-serif;
           font-weight: 800;
           font-size: 2rem; } }
     body header .hamburger {
@@ -157,12 +153,16 @@ body {
       z-index: 1; }
       @media (max-width: 575px) {
         body header .hamburger {
-          left: 12%;
-          top: 4%; } }
-      @media (min-width: 576px) and (max-width: 767px) {
+          left: 10%;
+          top: 5%; } }
+      @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
         body header .hamburger {
-          left: 12%;
+          left: 7%;
           top: 4%; } }
+      @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+        body header .hamburger {
+          left: 7%;
+          top: 7%; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body header .hamburger {
           left: 8%;
@@ -310,13 +310,13 @@ body {
             font-size: 1.5rem; } }
         @media (min-width: 576px) and (max-width: 767px) {
           body header .web-dev h2 {
-            font-size: 2.5rem; } }
+            font-size: 2rem; } }
         @media (min-width: 768px) and (max-width: 991px) {
           body header .web-dev h2 {
-            font-size: 4.5rem; } }
+            font-size: 2.3rem; } }
         @media (min-width: 992px) and (max-width: 1199px) {
           body header .web-dev h2 {
-            font-size: 4.5rem; } }
+            font-size: 2.3rem; } }
       body header .web-dev h3 {
         font-size: 1.2rem; }
         @media (max-width: 575px) {
@@ -324,13 +324,13 @@ body {
             font-size: 1rem; } }
         @media (min-width: 576px) and (max-width: 767px) {
           body header .web-dev h3 {
-            font-size: 2rem; } }
+            font-size: 1rem; } }
         @media (min-width: 768px) and (max-width: 991px) {
           body header .web-dev h3 {
-            font-size: 4.5rem; } }
+            font-size: 1.5rem; } }
         @media (min-width: 992px) and (max-width: 1199px) {
           body header .web-dev h3 {
-            font-size: 4.5rem; } }
+            font-size: 1.5rem; } }
     body header .projets .galerie {
       box-shadow: 5px 8px 14px #0000007a; }
       @media (max-width: 575px) {
@@ -354,16 +354,28 @@ body {
         background: url(img/vpvj.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro1 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro1 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro1 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro1 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro1 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro1 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro1 {
             width: 70vw; } }
       body header .projets .galerie .pro2 {
@@ -373,16 +385,28 @@ body {
         background: url(img/blueasy.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro2 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro2 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro2 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro2 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro2 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro2 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro2 {
             width: 70vw; } }
       body header .projets .galerie .pro3 {
@@ -392,16 +416,28 @@ body {
         background: url(img/access_movie.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro3 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro3 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro3 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro3 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro3 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro3 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro3 {
             width: 70vw; } }
       body header .projets .galerie .pro4 {
@@ -411,16 +447,28 @@ body {
         background: url(img/run.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro4 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro4 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro4 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro4 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro4 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro4 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro4 {
             width: 70vw; } }
       body header .projets .galerie .pro5 {
@@ -430,16 +478,28 @@ body {
         background: url(img/explorateur.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro5 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro5 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro5 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro5 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro5 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro5 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro5 {
             width: 70vw; } }
       body header .projets .galerie .pro6 {
@@ -449,16 +509,28 @@ body {
         background: url(img/files-walk.png);
         background-position: center;
         background-size: cover; }
-        @media (max-width: 575px) {
+        @media (max-width: 575px) and (orientation: portrait) {
           body header .projets .galerie .pro6 {
             width: 70vw; } }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (max-width: 575px) and (orientation: landscape) {
+          body header .projets .galerie .pro6 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
           body header .projets .galerie .pro6 {
             width: 70vw; } }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
           body header .projets .galerie .pro6 {
             width: 70vw; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+          body header .projets .galerie .pro6 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+          body header .projets .galerie .pro6 {
+            width: 70vw;
+            height: 65vh; } }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
           body header .projets .galerie .pro6 {
             width: 70vw; } }
       body header .projets .galerie .hover {
@@ -582,21 +654,69 @@ body {
   body .section-apropos {
     height: 100vh;
     padding: 0; }
-    body .section-apropos h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      max-width: 35vw;
-      margin-bottom: 3vh; }
-    body .section-apropos .bio {
-      text-align: justify;
-      max-width: 35vw;
-      font-size: .9rem; }
-    body .section-apropos .linkedin {
-      text-decoration: none;
-      font-size: .9rem;
-      color: #333333; }
+    @media (max-width: 575px) {
+      body .section-apropos {
+        height: auto;
+        padding: 20px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body .section-apropos {
+        height: auto;
+        padding: 20px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .section-apropos {
+        height: auto;
+        padding: 20px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body .section-apropos {
+        height: auto;
+        padding: 20px; } }
+    body .section-apropos .presentation {
+      max-width: 35vw; }
+      @media (max-width: 575px) {
+        body .section-apropos .presentation {
+          max-width: 100%;
+          margin-top: 5vh;
+          margin-bottom: 5vh; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body .section-apropos .presentation {
+          max-width: 100%;
+          margin-top: 5vh;
+          margin-bottom: 5vh; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .section-apropos .presentation {
+          max-width: 100%;
+          margin-top: 5vh;
+          margin-bottom: 5vh; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body .section-apropos .presentation {
+          max-width: 100%;
+          margin-top: 5vh;
+          margin-bottom: 5vh; } }
+      body .section-apropos .presentation h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        margin-bottom: 3vh; }
+        @media (max-width: 575px) {
+          body .section-apropos .presentation h1 {
+            font-size: 2rem; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body .section-apropos .presentation h1 {
+            font-size: 2rem; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          body .section-apropos .presentation h1 {
+            font-size: 2rem; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body .section-apropos .presentation h1 {
+            font-size: 2rem; } }
+      body .section-apropos .presentation .bio {
+        text-align: justify;
+        font-size: .9rem; }
+      body .section-apropos .presentation .linkedin {
+        text-decoration: none;
+        font-size: .9rem;
+        color: #333333; }
   body .section-footer {
     background-color: #343a40;
     background: linear-gradient(rgba(0, 156, 181, 0.18), rgba(0, 0, 0, 0.82)), url(img/doubleexplosure.jpg);
@@ -605,6 +725,9 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 0 !important; }
+    body .section-footer a {
+      text-decoration: none;
+      color: white; }
     body .section-footer h4 {
       font-size: 3rem;
       letter-spacing: 4px;
@@ -615,22 +738,26 @@ body {
         body .section-footer h4 {
           font-size: 1.5rem;
           max-width: 80vw;
-          letter-spacing: 5px; } }
+          letter-spacing: 5px;
+          margin-top: 5vh; } }
       @media (min-width: 576px) and (max-width: 767px) {
         body .section-footer h4 {
           font-size: 1.5rem;
           max-width: 80vw;
-          letter-spacing: 5px; } }
+          letter-spacing: 5px;
+          margin-top: 5vh; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body .section-footer h4 {
           font-size: 1.5rem;
           max-width: 80vw;
-          letter-spacing: 5px; } }
+          letter-spacing: 5px;
+          margin-top: 5vh; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body .section-footer h4 {
           font-size: 1.5rem;
           max-width: 80vw;
-          letter-spacing: 5px; } }
+          letter-spacing: 5px;
+          margin-top: 5vh; } }
     body .section-footer .icone {
       margin-top: 5vh;
       margin-bottom: 15vh; }
