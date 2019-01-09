@@ -159,7 +159,7 @@ body{
           #el__fIKrZmZ8{
             position: fixed;
             top: 3%;
-            right: 7%;
+            right: 6%;
             z-index: 1;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
@@ -407,6 +407,7 @@ body{
                 }
             }
         }
+
         .projets{
             // box-shadow: 5px 8px 14px #0000007a;
             .galerie{
@@ -793,7 +794,7 @@ body{
         padding: 20px;
         }
         .presentation{
-            max-width: 35vw;
+            max-width: 40vw;
             @media (max-width: 575px) {
             max-width: 100%;
             margin-top: 5vh;
@@ -835,12 +836,12 @@ body{
             }
             .bio{
                 text-align: justify;
-                font-size: .9rem;
+                font-size: 1.2rem;
             }
             .linkedin{
                 text-decoration: none;
                 font-size: .9rem;
-                color: #333333;
+                color: #333333a1;
             }
         }
     }
@@ -927,42 +928,118 @@ body{
                 }
         }
     }
-    // contact
-    .section-contact{
-        padding: 50px;
-        label{
-            font-weight: bold;
-            color: #00B286;
+    // page prjets
+    .titre-page-projets{
+        height: 100vh;
+        width: 100%;
+        background: url(img/bg-projet.jpeg);
+        background-position: center;
+        background-size: cover;
+        @media (max-width: 575px) { 
+             margin-top: 25vh;
+        margin-bottom: 15vh;
+         }
+         @media (min-width: 576px) and (max-width: 767px) { 
+             margin-top: 25vh;
+        margin-bottom: 15vh;
         }
-        button, input, optgroup, select, textarea {
-            border: none;
-            border-bottom: solid 1.5px #00B286;
-            margin-bottom: 30px;
-            width: 35vw;
-            background: none;
-            outline: none;
-            resize: none;
-            @media (max-width: 575px) {
-                width: 65vw;
+        @media (min-width: 768px) and (max-width: 991px) { 
+             margin-top: 25vh;
+        margin-bottom: 15vh;
+           }
+           @media (min-width: 992px) and (max-width: 1199px) { 
+             margin-top: 25vh;
+        margin-bottom: 15vh;
+        }
+        h2{
+            font-size: 5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            letter-spacing: 10px;
+            @media (max-width: 575px) { 
+                font-size: 3rem;
              }
              @media (min-width: 576px) and (max-width: 767px) { 
-                width: 60vw;
-              }
-              @media (min-width: 768px) and (max-width: 991px) { 
-                width: 60vw;
-              }
-              
+                font-size: 3.5rem;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                font-size: 4rem;
+               }
+               @media (min-width: 992px) and (max-width: 1199px) { 
+                font-size: 4rem;
+            }
         }
-        .btn {
-            background-color: #00B286; 
-            color: white;
-            box-shadow: 5px 5px 30px #00000038;
-            border: none;
+        h3{
+            font-size: 1.2rem;
+            @media (max-width: 575px) { 
+                font-size: 1.2rem;
+             }
+             @media (min-width: 576px) and (max-width: 767px) { 
+                font-size: 1.3rem;
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                font-size: 1.5rem;
+               }
+               @media (min-width: 992px) and (max-width: 1199px) { 
+                font-size: 1.5rem;
+            }
         }
-        .validation{
-            h2{
-                color: #d43c0b;
-                font-size: 1rem;
+        .down{
+            text-decoration: none;
+            color: black;
+            .fa-chevron-down{
+                font-size: 2rem;
+                padding-top: 25vh;
+                transition: .8s;
+                animation: go-down 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            }
+            @keyframes go-down {
+                0% {
+                transform: scale(1);
+                opacity: 0;
+                }
+                50% {
+                transform: scale(1.05);   
+                opacity: 1;
+                    }
+                100% {
+                transform: scale(1);
+                opacity: 0;
+                }
+            }
+        }
+    }
+    .section-projet{
+        
+        .expo-projet{
+            margin-top: 20vh;
+            margin-bottom: 20vh;
+            padding: 0;
+            .description-projet{
+                width: 100%;
+                h4{
+                    font-size:3rem;
+                    margin-top: 5vh;
+                    margin-bottom: 3vh;
+                }
+                p{
+                    font-size:1.5rem;
+                    margin-bottom: 3vh;
+                    max-width: 50vw;
+                    text-align: justify;
+                }
+                .github { 
+                    text-decoration: none;
+                    color: black;
+                    transition: .3s;
+                    &:hover{
+                        transform: scale(1.15);
+                        color: rgb(0, 129, 189);
+                    }
+                    i{
+                        font-size: 4rem;
+                    }
+                }
             }
         }
     }

@@ -106,7 +106,7 @@ body {
     body header #el__fIKrZmZ8 {
       position: fixed;
       top: 3%;
-      right: 7%;
+      right: 6%;
       z-index: 1;
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
@@ -671,7 +671,7 @@ body {
         height: auto;
         padding: 20px; } }
     body .section-apropos .presentation {
-      max-width: 35vw; }
+      max-width: 40vw; }
       @media (max-width: 575px) {
         body .section-apropos .presentation {
           max-width: 100%;
@@ -712,11 +712,11 @@ body {
             font-size: 2rem; } }
       body .section-apropos .presentation .bio {
         text-align: justify;
-        font-size: .9rem; }
+        font-size: 1.2rem; }
       body .section-apropos .presentation .linkedin {
         text-decoration: none;
         font-size: .9rem;
-        color: #333333; }
+        color: #333333a1; }
   body .section-footer {
     background-color: #343a40;
     background: linear-gradient(rgba(0, 156, 181, 0.18), rgba(0, 0, 0, 0.82)), url(img/doubleexplosure.jpg);
@@ -793,35 +793,100 @@ body {
       @media (min-width: 992px) and (max-width: 1199px) {
         body .section-footer p {
           font-size: 0.7rem; } }
-  body .section-contact {
-    padding: 50px; }
-    body .section-contact label {
-      font-weight: bold;
-      color: #00B286; }
-    body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
-      border: none;
-      border-bottom: solid 1.5px #00B286;
-      margin-bottom: 30px;
-      width: 35vw;
-      background: none;
-      outline: none;
-      resize: none; }
+  body .titre-page-projets {
+    height: 100vh;
+    width: 100%;
+    background: url(img/bg-projet.jpeg);
+    background-position: center;
+    background-size: cover; }
+    @media (max-width: 575px) {
+      body .titre-page-projets {
+        margin-top: 25vh;
+        margin-bottom: 15vh; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body .titre-page-projets {
+        margin-top: 25vh;
+        margin-bottom: 15vh; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .titre-page-projets {
+        margin-top: 25vh;
+        margin-bottom: 15vh; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body .titre-page-projets {
+        margin-top: 25vh;
+        margin-bottom: 15vh; } }
+    body .titre-page-projets h2 {
+      font-size: 5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      letter-spacing: 10px; }
       @media (max-width: 575px) {
-        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
-          width: 65vw; } }
+        body .titre-page-projets h2 {
+          font-size: 3rem; } }
       @media (min-width: 576px) and (max-width: 767px) {
-        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
-          width: 60vw; } }
+        body .titre-page-projets h2 {
+          font-size: 3.5rem; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body .section-contact button, body .section-contact input, body .section-contact optgroup, body .section-contact select, body .section-contact textarea {
-          width: 60vw; } }
-    body .section-contact .btn {
-      background-color: #00B286;
-      color: white;
-      box-shadow: 5px 5px 30px #00000038;
-      border: none; }
-    body .section-contact .validation h2 {
-      color: #d43c0b;
-      font-size: 1rem; }
+        body .titre-page-projets h2 {
+          font-size: 4rem; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body .titre-page-projets h2 {
+          font-size: 4rem; } }
+    body .titre-page-projets h3 {
+      font-size: 1.2rem; }
+      @media (max-width: 575px) {
+        body .titre-page-projets h3 {
+          font-size: 1.2rem; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body .titre-page-projets h3 {
+          font-size: 1.3rem; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .titre-page-projets h3 {
+          font-size: 1.5rem; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body .titre-page-projets h3 {
+          font-size: 1.5rem; } }
+    body .titre-page-projets .down {
+      text-decoration: none;
+      color: black; }
+      body .titre-page-projets .down .fa-chevron-down {
+        font-size: 2rem;
+        padding-top: 25vh;
+        transition: .8s;
+        animation: go-down 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite; }
+@keyframes go-down {
+  0% {
+    transform: scale(1);
+    opacity: 0; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+  body .section-projet .expo-projet {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 0; }
+    body .section-projet .expo-projet .description-projet {
+      width: 100%; }
+      body .section-projet .expo-projet .description-projet h4 {
+        font-size: 3rem;
+        margin-top: 5vh;
+        margin-bottom: 3vh; }
+      body .section-projet .expo-projet .description-projet p {
+        font-size: 1.5rem;
+        margin-bottom: 3vh;
+        max-width: 50vw;
+        text-align: justify; }
+      body .section-projet .expo-projet .description-projet .github {
+        text-decoration: none;
+        color: black;
+        transition: .3s; }
+        body .section-projet .expo-projet .description-projet .github:hover {
+          transform: scale(1.15);
+          color: #0081bd; }
+        body .section-projet .expo-projet .description-projet .github i {
+          font-size: 4rem; }
 
 /*# sourceMappingURL=style.css.map */
