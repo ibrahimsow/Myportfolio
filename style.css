@@ -871,7 +871,8 @@ body {
       body .section-projet .expo-projet .description-projet h4 {
         font-size: 3rem;
         margin-top: 5vh;
-        margin-bottom: 3vh; }
+        margin-bottom: 3vh;
+        color: #188cc3; }
         @media (max-width: 575px) {
           body .section-projet .expo-projet .description-projet h4 {
             font-size: 1.5rem; } }
@@ -887,8 +888,9 @@ body {
       body .section-projet .expo-projet .description-projet p {
         font-size: 1.5rem;
         margin-bottom: 3vh;
-        max-width: 50vw;
-        text-align: justify; }
+        max-width: 30vw;
+        text-align: justify;
+        color: #6d7179; }
         @media (max-width: 575px) {
           body .section-projet .expo-projet .description-projet p {
             max-width: 80vw;
@@ -905,6 +907,8 @@ body {
           body .section-projet .expo-projet .description-projet p {
             max-width: 80vw;
             font-size: 1rem; } }
+      body .section-projet .expo-projet .description-projet .language {
+        color: #188cc3; }
       body .section-projet .expo-projet .description-projet .github {
         text-decoration: none;
         color: black;
@@ -913,6 +917,6 @@ body {
           transform: scale(1.15);
           color: #0081bd; }
         body .section-projet .expo-projet .description-projet .github i {
-          font-size: 4rem; }
+          font-size: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

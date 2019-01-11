@@ -1028,6 +1028,7 @@ body{
                     font-size:3rem;
                     margin-top: 5vh;
                     margin-bottom: 3vh;
+                    color: #188cc3;
                     @media (max-width: 575px) { 
                         font-size: 1.5rem;
                      }
@@ -1044,8 +1045,9 @@ body{
                 p{
                     font-size:1.5rem;
                     margin-bottom: 3vh;
-                    max-width: 50vw;
+                    max-width: 30vw;
                     text-align: justify;
+                    color: #6d7179;
                     @media (max-width: 575px) { 
                         max-width: 80vw;
                         font-size: 1rem;
@@ -1063,6 +1065,9 @@ body{
                         font-size: 1rem;
                     }
                 }
+                .language{
+                    color: #188cc3;
+                }
                 .github { 
                     text-decoration: none;
                     color: black;
@@ -1072,7 +1077,7 @@ body{
                         color: rgb(0, 129, 189);
                     }
                     i{
-                        font-size: 4rem;
+                        font-size: 3rem;
                     }
                 }
             }
