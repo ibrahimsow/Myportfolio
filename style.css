@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0; }
   body header {
@@ -725,7 +726,13 @@ body {
       body .section-apropos .presentation .linkedin {
         text-decoration: none;
         font-size: .9rem;
-        color: #333333a1; }
+        color: #333333a1;
+        margin-bottom: 2vh; }
+      body .section-apropos .presentation .btn-success:hover {
+        transform: translateX(10px); }
+      body .section-apropos .presentation .btn-success .télécharger {
+        text-decoration: none;
+        color: white; }
   body .section-footer {
     background-color: #343a40;
     background: linear-gradient(rgba(0, 156, 181, 0.18), rgba(0, 0, 0, 0.82)), url(img/doubleexplosure.jpg);
@@ -888,7 +895,7 @@ body {
       body .section-projet .expo-projet .description-projet p {
         font-size: 1.5rem;
         margin-bottom: 3vh;
-        max-width: 30vw;
+        max-width: 40vw;
         text-align: justify;
         color: #6d7179; }
         @media (max-width: 575px) {
